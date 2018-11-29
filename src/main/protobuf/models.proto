@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package knoldus;
+
+message Person {
+    required string name = 1;
+    required int32 age = 2;
+    required Company company = 3;
+}
+
+message Company {
+    required string location = 1;
+    optional string project = 2;
+}
